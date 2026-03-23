@@ -1,0 +1,19 @@
+title: Cloud Unauthorized Login
+id: e1f2d3c4-b5a6-7890-abcd-1234567890ef
+description: Detects unauthorized login attempts and privilege escalation events in cloud audit logs
+author: Your Name
+logsource:
+  product: gcp
+  service: cloud_audit
+detection:
+  selection:
+    Event:
+      - "Unauthorized login attempt"
+      - "Privilege escalation attempt"
+  condition: selection
+fields:
+  - User
+  - Source IP
+  - Resource
+  - Event
+level: high
