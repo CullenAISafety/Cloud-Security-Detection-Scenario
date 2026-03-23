@@ -1,0 +1,5 @@
+{
+  "source_ips": ["203.0.113.50", "198.51.100.23"],
+  "user_accounts": ["user@lab.com", "admin@lab.com"],
+  "regions": ["us-central1"]
+}
